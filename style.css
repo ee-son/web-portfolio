@@ -1,0 +1,20 @@
+#home {
+    padding-top: 200px;
+    padding-bottom: 300px;
+    text-align: center;
+}
+
+#tech {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.horizontal {
+    display: flex;
+}
+
+#tech-stack{
+    width: 50px;
+    height: 50px;
+}
