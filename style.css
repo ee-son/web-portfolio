@@ -1,3 +1,27 @@
+/* Header */
+.bg-white {
+    background-color: white;
+}
+
+.bg-inverse {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: gray;
+}
+
+.bg-inverse .nav-link {
+    color: white;
+}
+
 /* Home section */
 #home {
     padding-top: 300px;
@@ -40,3 +64,39 @@
 }
 
 /* Project section */
+#project{
+    text-align: center;
+}
+
+/* About section */
+#about{
+    text-align: center;
+}
+
+.text-wrapper{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+/* #contacts section */
+#contacts{
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons svg {
+    width: 70px;
+    height: 70px;
+}
