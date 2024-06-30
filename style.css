@@ -71,6 +71,7 @@ section {
 /* Project section */
 #project{
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .slider {
@@ -127,6 +128,7 @@ section {
 /* About section */
 #about{
     text-align: center;
+    padding-bottom: 35px;
 }
 
 .text-wrapper{
