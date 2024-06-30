@@ -2,27 +2,32 @@ section {
     padding-left: 20px;
     padding-right: 20px;
 }
+.content-wrapper{
+    text-align: justify;
+}
+.fs-4 {
+    font-size: 1.5rem; /* Default fs-4 size */
+}
+.fs-6 {
+    font-size: 1rem;
+}
 
 /* Header */
 .bg-white {
     background-color: white;
 }
-
 .bg-inverse {
     background-color: black;
     color: white;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .navbar-nav .nav-link {
     color: black;
     transition: color 0.3s;
 }
-
 .navbar-nav .nav-link:hover {
     color: gray;
 }
-
 .bg-inverse .nav-link {
     color: white;
 }
@@ -40,11 +45,9 @@ section {
     padding-bottom: 100px;
     text-align: center;
 }
-
 .horizontal {
     display: flex;
 }
-
 .tech-card {
     display: flex;
     flex-direction: column;
@@ -55,13 +58,11 @@ section {
     border-radius: 5px;
     margin: 15px;
 }
-
 .tech-image{
     width: 50px;
     height: 50px;
     margin-top: 0.5em;
 }
-
 .tech-label{
     margin-top: 0.5em;
     font-size: 0.9em;
@@ -72,7 +73,6 @@ section {
 #project{
     text-align: center;
 }
-
 .slider {
     display: flex;
     gap: 20px;
@@ -86,25 +86,20 @@ section {
     /* Hide scrollbar in IE and Edge */
     -ms-overflow-style: none;
 }
-
 .slider::-webkit-scrollbar{
     display: none;
 }
-
 .slider-item {
     flex-shrink: 0;
 }
-
 .slider-content {
     display: flex;
 }
-
 .slider-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-}
-  
+} 
 .slider-button {
     position: absolute;
     top: 50%;
@@ -113,13 +108,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-  
+} 
 .button--previous {
     left: 1.5rem;
     transform: rotate(180deg);
-}
-  
+} 
 .button--next {
     right: 1.5rem;
 }
@@ -128,30 +121,40 @@ section {
 #about{
     text-align: center;
 }
-
-.text-wrapper{
+.content-wrapper #aboutContent{
     background-color: rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
     color: black;
-    text-align: justify;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 /* #contacts section */
 #contacts{
     text-align: center;
 }
-
+.content-wrapper #toMyEmail{
+    background-color: black;
+    color: white;
+    padding: 2.5em;
+    border-radius: 15px;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+@media screen and (max-width: 768px) {
+    .content-wrapper #toMyEmail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }  
+}
 .social-icons {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-
 .social-icons a {
     text-decoration: none;
 }
-
 .social-icons svg {
     width: 70px;
     height: 70px;

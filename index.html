@@ -13,7 +13,7 @@
       <nav class="navbar navbar-expand-lg fixed-top bg-white">
           <div class="container-fluid">
             <h4 class="ms-3">Isan FH</h4>
-            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
@@ -159,8 +159,8 @@
   <!-- About -->
   <section id="about">
     <p class="fs-1 fw-bolder" style="margin-bottom: 0.5em;">About me</p>
-    <div class="text-wrapper p-3">
-      <p class="fs-6">I'm a second year vocational student at Universitas Gadjah Mada (UGM) and take software engineer as my major. I have an interest 
+    <div class="content-wrapper">
+      <p id="aboutContent" class="fs-6">I'm a second year vocational student at Universitas Gadjah Mada (UGM) and take software engineer as my major. I have an interest 
         in programming from a long time ago and I want to apply my skills on a particular project, especially a web app. I also have an 
         interest in data science and machine learning. But, it doesn't mean I'm not interested in new things since I have a huge curiosity, 
         specifically about software engineers and some computer stuff.</p>
@@ -171,7 +171,28 @@
   <!-- Contacts -->
   <section id="contacts">
     <p class="fs-1 fw-bolder" style="margin-bottom: 0.5em;">Contact me for any inquires</p>
-    
+    <div class="content-wrapper">
+      <div id="toMyEmail">
+        <div style="text-align: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" id="envelopeIcon" width="75" height="75" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>
+          <p id="emailInfo1" class="fs-4 mt-3" style="margin-bottom: 0;">It will send on my email:</p>
+          <p id="emailInfo2" class="fs-4 fw-semibold" style="max-width: 100%; word-wrap: break-word;">isan.faizun.hidar@mail.ugm.ac.id</p>
+        </div>
+        <form action="">
+          <label class="form-label" for="name">Name</label><br>
+          <input class="form-control" type="text" placeholder="Your name"><br>
+          <label class="form-label" for="email">Email</label><br>
+          <input class="form-control" type="text" placeholder="Your email"><br>
+          <label class="form-label" for="title">Title</label><br>
+          <input class="form-control" type="text" placeholder="Title"><br>
+          <label class="form-label" for="message">Message</label><br>
+          <textarea class="form-control" rows="8" name="message" id="message" placeholder="Message" style="resize: none;"></textarea><br>
+          <button class="btn btn-light" type="submit">Submit</button>
+        </form>
+      </div>
+      </div>
     <p class="fs-1 fw-bolder" style="margin-bottom: 0.5em;">Or, you could find me on</p>
     <div class="social-icons mb-5">
       <a href="https://github.com/IsanFaizun">

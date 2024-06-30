@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
-    const toggler = document.getElementById('navbar-toggler');
+    const toggler = document.getElementById('navbarToggler');
     if (window.scrollY > 50) {
         navbar.classList.add('bg-inverse');
         navbar.classList.remove('bg-white');
@@ -14,17 +14,40 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const list = document.querySelector(".slider");
+function handleClick(direction) {
+    const list = document.querySelector(".slider");
+    const item = document.querySelector(".slider-item");
+    const itemWidth = item.offsetWidth;
 
-  // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
-  const item = document.querySelector(".slider-item");
-  const itemWidth = item.offsetWidth;
-
-  function handleClick(direction) {
-    // Based on the direction we call `scrollBy` with the item width we got earlier
     if(direction === "previous") {
-      list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+        list.scrollBy({ left: -itemWidth, behavior: "smooth" });
     } else {
-      list.scrollBy({ left: itemWidth, behavior: "smooth" });
+        list.scrollBy({ left: itemWidth, behavior: "smooth" });
     }
-  }
+}
+
+function adjustResponsiveElements() {
+    const envelopeIcon = document.getElementById('envelopeIcon');
+    const textElements = document.querySelectorAll('#emailInfo1, #emailInfo2');
+
+    if (window.innerWidth < 768) {
+        envelopeIcon.setAttribute('width', '50');
+        envelopeIcon.setAttribute('height', '50');
+        
+        textElements.forEach(el => {
+        el.classList.remove('fs-4');
+        el.classList.add('fs-6');
+        });
+    } else {
+        envelopeIcon.setAttribute('width', '75');
+        envelopeIcon.setAttribute('height', '75');
+        
+        textElements.forEach(el => {
+        el.classList.remove('fs-6');
+        el.classList.add('fs-4');
+        });
+    }
+}
+
+window.addEventListener('resize', adjustResponsiveElements);
+window.addEventListener('load', adjustResponsiveElements);
