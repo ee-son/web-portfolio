@@ -94,16 +94,20 @@ section {
 
 .slider-item {
     flex-shrink: 0;
+    min-width: calc(100% / 3);
+    box-sizing: border-box;
 }
 
 .slider-content {
     display: flex;
+    justify-content: center;
 }
 
 .slider-wrapper {
     position: relative;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
   
 .slider-button {
