@@ -1,4 +1,5 @@
 section {
+    padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -36,8 +37,7 @@ section {
 
 /* Tech section */
 #tech {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -47,6 +47,7 @@ section {
 
 .tech-card {
     display: flex;
+    padding: 10px 50px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -64,7 +65,8 @@ section {
 
 .tech-label{
     margin-top: 0.5em;
-    font-size: 0.9em;
+    font-weight: bold;
+    font-size: 0.8em;
     margin-bottom: 10%;
 }
 
