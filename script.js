@@ -31,12 +31,30 @@ function adjustCardWidth() {
   var cards = document.querySelectorAll('.card');
 
   cards.forEach(function(card) {
-    if (screenWidth <= 768) {
+    if (screenWidth < 768) {
       card.style.width = '14.5rem';
     } else {
       card.style.width = '28rem';
     }
   });
 }
-window.addEventListener('load', adjustCardWidth);
-window.addEventListener('resize', adjustCardWidth);
+function adjustAboutText() {
+  const aboutText = document.getElementById('aboutText');
+  if (window.innerWidth < 768) {
+    aboutText.classList.remove('fs-5');
+    aboutText.classList.add('fs-6');
+  } else {
+    aboutText.classList.remove('fs-6');
+    aboutText.classList.add('fs-5');
+  }
+}
+
+window.addEventListener('load', function() {
+  adjustCardWidth();
+  adjustAboutText();
+});
+
+window.addEventListener('resize', function() {
+  adjustCardWidth();
+  adjustAboutText();
+});
