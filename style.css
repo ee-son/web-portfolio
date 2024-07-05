@@ -41,10 +41,6 @@ section {
     text-align: center;
 }
 
-.horizontal {
-    display: flex;
-}
-
 .tech-card {
     display: flex;
     padding: 10px 50px;
