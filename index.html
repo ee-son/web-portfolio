@@ -22,7 +22,7 @@
                 <a class="nav-link" href="#tech">Tech</a>
                 <a class="nav-link" href="#project">Project</a>
                 <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#contacts">Contacts</a>
+                <!-- <a class="nav-link" href="#contacts">Contacts</a> -->
               </div>
             </div>
           </div>
@@ -98,6 +98,10 @@
           <p class="tech-label">Git</p>
         </div>
         <div class="tech-card">
+          <img src="assets/tech/GitHub.png" class="tech-image" alt="Github">
+          <p class="tech-label">GitHub</p>
+        </div>
+        <div class="tech-card">
           <img src="assets/tech/Postman.png" class="tech-image" alt="Postman">
           <p class="tech-label">Postman</p>
         </div>
@@ -113,44 +117,83 @@
   <!-- Project -->
   <section id="project">
     <p class="fs-2 fw-bolder" style="margin-bottom: 1.5em;">Several project that I have worked on</p>
-    <div class="slider-wrapper">
-      <ul class="slider">
-        <li class="slider-item">
-          <div class="slider-content">
-            <div class="card" style="width: 28rem;">
-              <img src="assets/project/book-store.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Book Store</h5>
-                <p class="card-text">Personal web project that can do CRUD using Laravel framework. It contains some features such as book’s rating, favorites, and popular books.</p>
+    <div class="slider-container px-4">
+      <button onclick="handleClick('previous')" class="slider-button button--previous" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
+      </button>
+      <div class="slider-wrapper">
+        <ul class="slider">
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/book-store.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Book Store</h5>
+                  <p class="card-text">Personal website project that can do CRUD using Laravel framework. It contains some features such as book’s rating, favorites, and popular books.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="slider-item">
-          <div class="slider-content">
-            <div class="card" style="width: 28rem;">
-              <img src="assets/project/gamesite.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Gamesite</h5>
-                <p class="card-text">Personal web project that can do read, update, and delete method using HTML, CSS, Javascript, and PHP native without any framework.</p>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/gamesite.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gamesite</h5>
+                  <p class="card-text">Personal website project that can do read, update, and delete method using HTML, CSS, Javascript, and PHP native without any framework.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="slider-item">
-          <div class="slider-content">
-            <div class="card" style="width: 28rem;">
-              <img src="assets/project/inpatient-room-reservation.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Inpatient Room Reservation</h5>
-                <p class="card-text">A web project used to make room reservations. This project was carried out using Fast API and Laravel as the framework</p>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/inpatient-room-reservation.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Inpatient Room Reservation</h5>
+                  <p class="card-text">A website project used to make room reservations in hospital. This project was carried out using Fast API and Laravel as the framework</p>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-      <button onclick="handleClick('previous')" class="btn btn-dark slider-button button--previous" type="button">➜</button>
-      <button onclick="handleClick('next')" class="btn btn-dark slider-button button--next" type="button">➜</button>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/sibukin.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sibukin</h5>
+                  <p class="card-text">It's the website project dedicated to providing registration related to competency training in Yogyakarta. The framework that used on this project is Laravel.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/madana.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Madana Innotech</h5>
+                  <p class="card-text">This is a company profile website for a software technology services company. The website was developed with Laravel as the backend framework and Vue.js as the frontend framework</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/othello.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Othello Game</h5>
+                  <p class="card-text">The project is an Othello game that develops using Java programming language and using Javaswing as the GUI</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button onclick="handleClick('next')" class="slider-button button--next" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
+      </button>
     </div>
   </section>
   <!-- End project -->
@@ -188,6 +231,10 @@
     Email: isan.faizun.hidar@mail.ugm.ac.id
   </div>
   </section>
+  <footer style="align-items: center;">
+    <p></p>
+  </footer>
+
   <!-- End contacts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

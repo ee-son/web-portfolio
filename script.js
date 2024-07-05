@@ -25,13 +25,14 @@ function handleClick(direction) {
     list.scrollBy({ left: itemWidth, behavior: "smooth" });
   }
 }
+
 function adjustCardWidth() {
   var screenWidth = window.innerWidth;
   var cards = document.querySelectorAll('.card');
 
   cards.forEach(function(card) {
     if (screenWidth <= 768) {
-      card.style.width = '18rem';
+      card.style.width = '14.5rem';
     } else {
       card.style.width = '28rem';
     }
