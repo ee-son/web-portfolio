@@ -66,6 +66,10 @@ section {
     margin-bottom: 10%;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Project section */
 #project{
     text-align: center;

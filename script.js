@@ -49,12 +49,58 @@ function adjustAboutText() {
   }
 }
 
+function updateVisibility() {
+  const techContainer = document.getElementById('techWrapper');
+  const cards = Array.from(techContainer.getElementsByClassName('tech-card'));
+  cards.forEach((card, index) => {
+    if (window.innerWidth <= 454) {
+      if (index >= 10) {
+        card.classList.add('hidden');
+      } else {
+        card.classList.remove('hidden');
+      }
+    } else {
+      card.classList.remove('hidden');
+    }
+  });
+}
+
+function moreOrLessButton() {
+  const techContainer = document.getElementById('techWrapper');
+  const toggleButton = document.getElementById('moreOrLess');
+  const cards = Array.from(techContainer.getElementsByClassName('tech-card'));
+
+  if (toggleButton.textContent === 'Show More') {
+    cards.forEach(card => card.classList.remove('hidden'));
+    toggleButton.textContent = 'Show Less';
+    toggleButton.removeAttribute('href', '#tech');
+  } else {
+    updateVisibility();
+    toggleButton.textContent = 'Show More';
+    toggleButton.setAttribute('href', '#tech');
+  }
+}
+
+function checkScreenWidth() {
+  const toggleButton = document.getElementById('moreOrLess');
+  if (window.innerWidth < 454) {
+    toggleButton.style.display = 'block';
+    updateVisibility();
+  } else {
+    toggleButton.style.display = 'none';
+  }
+}
+
 window.addEventListener('load', function() {
   adjustCardWidth();
   adjustAboutText();
+  checkScreenWidth();
 });
 
 window.addEventListener('resize', function() {
   adjustCardWidth();
   adjustAboutText();
+  checkScreenWidth();
 });
+
+document.getElementById('moreOrLess').addEventListener('click', moreOrLessButton);

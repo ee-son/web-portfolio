@@ -44,7 +44,7 @@
   <section id="tech">
     <div class="container-fluid">
       <p class="fs-2 fw-bolder" style="margin-bottom: 1.5em;">Here is the tech that I use</p>
-      <div class="d-flex flex-wrap justify-content-center" style="margin-bottom: 4em;">
+      <div class="d-flex flex-wrap justify-content-center" id="techWrapper" style="margin-bottom: 4em;">
         <div class="tech-card">
           <img src="assets/tech/Python.png" class="tech-image" alt="Python">
           <p class="tech-label">Python</p>
@@ -70,6 +70,10 @@
           <p class="tech-label">PHP</p>
         </div>
         <div class="tech-card">
+          <img src="assets/tech/MySQL.png" class="tech-image" alt="MySQL">
+          <p class="tech-label">MySQL</p>
+        </div>
+        <div class="tech-card">
           <img src="assets/tech/Laravel.png" class="tech-image" alt="Laravel">
           <p class="tech-label">Laravel</p>
         </div>
@@ -86,12 +90,20 @@
           <p class="tech-label">Sass</p>
         </div>
         <div class="tech-card">
+          <img src="assets/tech/Jupyter.png" class="tech-image" alt="Jupyter">
+          <p class="tech-label">Jupyter</p>
+        </div>
+        <div class="tech-card">
           <img src="assets/tech/JUnit.png" class="tech-image" alt="JUnit">
           <p class="tech-label">JUnit</p>
         </div>
         <div class="tech-card">
           <img src="assets/tech/Selenium.png" class="tech-image" alt="Selenium">
           <p class="tech-label">Selenium</p>
+        </div>
+        <div class="tech-card">
+          <img src="assets/tech/Cucumber.png" class="tech-image" alt="Cucumber">
+          <p class="tech-label">Cucumber</p>
         </div>
         <div class="tech-card">
           <img src="assets/tech/Git.png" class="tech-image" alt="Git">
@@ -109,7 +121,10 @@
           <img src="assets/tech/Figma.png" class="tech-image" alt="Figma">
           <p class="tech-label">Figma</p>
         </div>
-      </div>  
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <a href="#tech" id="moreOrLess" class="btn btn-dark" style="display: none;">Show More</a>  
+      </div>
     </div>
   </section>
   <!-- End tech -->
@@ -181,6 +196,28 @@
           <li class="slider-item">
             <div class="slider-content">
               <div class="card" style="width: 28rem;">
+                <img src="assets/project/linear-regression.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Regression Model</h5>
+                  <p class="card-text">It's a multiple linear regression model that using dataset namely “NYC Property Sales” from Kaggle. For this project, there are many libraries that used namely Numpy, Pandas, Scikit Learn, Matplotlib, and Seaborn</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
+                <img src="assets/project/log-reg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Clustering Model</h5>
+                  <p class="card-text">It's a logistic regression model that using dataset namely “Mushroom” from UCI. The result of this model is pretty impressive because it has good accuration and precision</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-content">
+              <div class="card" style="width: 28rem;">
                 <img src="assets/project/othello.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Othello Game</h5>
@@ -229,8 +266,8 @@
     Email: isan.faizun.hidar@mail.ugm.ac.id
   </div>
   </section>
-  <footer style="align-items: center;">
-    <p></p>
+  <footer style="background-color:black; color: white; display: flex; justify-content: center; padding-top: 10px;">
+    <p>© 2024 Isan F. Hidar</p>
   </footer>
 
   <!-- End contacts -->
