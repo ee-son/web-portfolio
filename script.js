@@ -73,11 +73,9 @@ function moreOrLessButton() {
   if (toggleButton.textContent === 'Show More') {
     cards.forEach(card => card.classList.remove('hidden'));
     toggleButton.textContent = 'Show Less';
-    toggleButton.removeAttribute('href', '#tech');
   } else {
     updateVisibility();
     toggleButton.textContent = 'Show More';
-    toggleButton.setAttribute('href', '#tech');
   }
 }
 
