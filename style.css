@@ -33,6 +33,7 @@ section {
     padding-top: 300px;
     padding-bottom: 300px;
     text-align: center;
+    animation: fade-down 1s;
 }
 
 /* Tech section */
@@ -172,4 +173,32 @@ section {
 .social-icons svg {
     width: 70px;
     height: 70px;
+}
+
+/* Animation */
+@keyframes fade-down {
+    from {
+        opacity: 0; transform: translateY(-50px); 
+    }
+    to { 
+        opacity: 1; transform: translateY(0); 
+    }
+}
+
+@keyframes fade-left {
+    from {
+        opacity: 0; transform: translateX(-50px); 
+    }
+    to { 
+        opacity: 1; transform: translateX(0); 
+    }
+}
+
+@keyframes fade-right {
+    from {
+        opacity: 0; transform: translateX(50px); 
+    }
+    to { 
+        opacity: 1; transform: translateX(0); 
+    }
 }
