@@ -1,4 +1,69 @@
-$card-border-radius: 1.2rem;
-$card-height: 60vh;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
 
+$card-border-radius: 1.2rem;
+
+// Add custom color
+$custom-colors: (
+  "cyan-blue": #3776AB
+);
+
+$all-color-scales: map-merge(
+  $grays,
+  map-merge(
+    $blues,
+    map-merge(
+      $indigos,
+      map-merge(
+        $purples,
+        map-merge(
+          $pinks,
+          map-merge(
+            $reds,
+            map-merge(
+              $oranges,
+              map-merge(
+                $yellows,
+                map-merge(
+                  $greens,
+                  map-merge(
+                    $teals,
+                    map-merge(
+                      $cyans,
+                      $custom-colors
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+);
+
+$colors: map-merge($colors, $all-color-scales);
+
+// Activate all colors utilities
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": (
+      property: color,
+      class: text,
+      values: $colors
+    ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: $colors
+    )
+  )
+);
+
+@import "../node_modules/bootstrap/scss/utilities";
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

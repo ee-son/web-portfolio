@@ -132,107 +132,63 @@
 
   <!-- Project -->
   <section id="project">
-    <p class="fs-2 fw-bolder" style="margin-bottom: 1.5em;">Several project that I have worked on</p>
-    <div class="slider-container px-4">
-      <button onclick="handleClick('previous')" class="slider-button button--previous" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
-      </button>
-      <div class="slider-wrapper">
-        <ul class="slider">
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/book-store.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Book Store</h5>
-                  <p class="card-text">Personal website project that can do CRUD using Laravel framework. It contains some features such as book’s rating, favorites, and popular books.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/gamesite.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Gamesite</h5>
-                  <p class="card-text">Personal website project that can do read, update, and delete method using HTML, CSS, Javascript, and PHP native without any framework.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/inpatient-room-reservation.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Inpatient Room Reservation</h5>
-                  <p class="card-text">A website project used to make room reservations in hospital. This project was carried out using Fast API and Laravel as the framework</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/sibukin.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Sibukin</h5>
-                  <p class="card-text">It's the website project dedicated to providing registration related to competency training in Yogyakarta. The framework that used on this project is Laravel.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/madana.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Madana Innotech</h5>
-                  <p class="card-text">This is a company profile website for a software technology services company. The website was developed with Laravel as the backend framework and Vue.js as the frontend framework</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/linear-regression.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Regression Model</h5>
-                  <p class="card-text">It's a multiple linear regression model that using dataset namely “NYC Property Sales” from Kaggle. For this project, there are many libraries that used namely Numpy, Pandas, Scikit Learn, Matplotlib, and Seaborn</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/log-reg.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Clustering Model</h5>
-                  <p class="card-text">It's a logistic regression model that using dataset namely “Mushroom” from UCI. The result of this model is pretty impressive because it has good accuration and precision</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider-item">
-            <div class="slider-content">
-              <div class="card" style="width: 28rem;">
-                <img src="assets/project/othello.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Othello Game</h5>
-                  <p class="card-text">The project is an Othello game that develops using Java programming language and using Javaswing as the GUI</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+    <p class="fs-2 fw-bolder" style="margin-bottom: 1.5em;">Several projects that I have worked on</p>
+    <div class="d-flex gap-4 flex-wrap">
+      <div class="card" style="width: 22rem;">
+        <img src="assets/image/project/book-store.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h5 class="card-title">Book Store</h5>
+          <p class="card-text">Personal website project that can do CRUD operations. It contains some features such as book’s rating, favorites, and popular books.</p>
+          <h6 class="mt-3">Tech:</h6>
+          <ul class="list-inline">
+            <li class="list-inline-item badge bg-red">Laravel</li>
+          </ul>
+        </div>
       </div>
-      <button onclick="handleClick('next')" class="slider-button button--next" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
-      </button>
+      <div class="card" style="width: 22rem;">
+        <img src="assets/image/project/auto-cutting.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h5 class="card-title">CV Stone Detector</h5>
+          <p class="card-text">A website for drill cuttings analysis using computer vision technology to determine stones types and characteristics.</p>
+          <h6 class="mt-3">Tech:</h6>
+          <ul class="list-inline">
+            <li class="list-inline-item badge bg-gray">Flask</li>
+            <li class="list-inline-item badge bg-black">Next.js</li>
+            <li class="list-inline-item badge bg-blue-700">YOLOv8</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="assets/image/project/gamesite.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h5 class="card-title">Gamesite</h5>
+          <p class="card-text">Website project with wishlist feature to learn dynamic website concept and is already responsive.</p>
+          <h6 class="mt-3">Tech:</h6>
+          <ul class="list-inline">
+            <li class="list-inline-item badge bg-purple-300 text-black">PHP</li>
+            <li class="list-inline-item badge bg-blue">CSS</li>
+            <li class="list-inline-item badge bg-yellow text-black">JavaScript</li>
+            <li class="list-inline-item badge bg-indigo">Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="assets/image/project/inpatient-room-reservation.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h5 class="card-title">Inpatient Room Reservation</h5>
+          <p class="card-text">A website project used to make room reservations in hospitals with REST API technology</p>
+          <h6 class="mt-3">Tech:</h6>
+          <ul class="list-inline">
+            <li class="list-inline-item badge bg-red">Laravel</li>
+            <li class="list-inline-item badge bg-teal-600">FastAPI</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <br>
+    <!-- <div style="display: flex; justify-content: center;">
+      <a href="projects.html" class="btn btn-dark">See More Projects</a>
+    </div> -->
   </section>
   <!-- End project -->
   

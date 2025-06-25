@@ -14,30 +14,33 @@ window.addEventListener('scroll', function() {
     }
 });
 
-function handleClick(direction) {
-  const list = document.querySelector(".slider");
-  const item = document.querySelector(".slider-item");
-  const itemWidth = item.offsetWidth;
+// Projects section with slider (carousel)
+
+// function handleClick(direction) {
+//   const list = document.querySelector(".slider");
+//   const item = document.querySelector(".slider-item");
+//   const itemWidth = item.offsetWidth;
   
-  if(direction === "previous") {
-    list.scrollBy({ left: -itemWidth, behavior: "smooth" });
-  } else {
-    list.scrollBy({ left: itemWidth, behavior: "smooth" });
-  }
-}
+//   if(direction === "previous") {
+//     list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+//   } else {
+//     list.scrollBy({ left: itemWidth, behavior: "smooth" });
+//   }
+// }
 
-function adjustCardWidth() {
-  var screenWidth = window.innerWidth;
-  var cards = document.querySelectorAll('.card');
+// function adjustCardWidth() {
+//   var screenWidth = window.innerWidth;
+//   var cards = document.querySelectorAll('.card');
 
-  cards.forEach(function(card) {
-    if (screenWidth < 768) {
-      card.style.width = '14.5rem';
-    } else {
-      card.style.width = '28rem';
-    }
-  });
-}
+//   cards.forEach(function(card) {
+//     if (screenWidth < 768) {
+//       card.style.width = '14.5rem';
+//     } else {
+//       card.style.width = '28rem';
+//     }
+//   });
+// }
+
 function adjustAboutText() {
   const aboutText = document.getElementById('aboutText');
   if (window.innerWidth < 768) {

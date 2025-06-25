@@ -77,7 +77,8 @@ section {
     padding-bottom: 50px;
 }
 
-.slider {
+/* Projects section with slider (carousel)*/
+/* .slider {
     display: flex;
     gap: 20px;
     list-style: none;
@@ -86,10 +87,8 @@ section {
     padding: 0 1rem;
     bottom: 0;
 
-    /* Hide scrollbar in Firefox */
     scrollbar-width: none;
 
-    /* Hide scrollbar in IE and Edge */
     -ms-overflow-style: none;
 }
 
@@ -139,7 +138,7 @@ section {
   
 .button--next {
     right: 1.5rem;
-}
+} */
 
 /* About section */
 #about{
