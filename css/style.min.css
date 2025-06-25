@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.card-img-top {
+  border-top-left-radius: 1.2rem !important;
+  border-top-right-radius: 1.2rem !important;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -120,6 +125,7 @@
   --bs-cyan-800: #055160;
   --bs-cyan-900: #032830;
   --bs-cyan-blue: #3776AB;
+  --bs-tealish-green: #23D96C;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
@@ -8530,6 +8536,10 @@ textarea.form-control-lg {
   color: #3776AB !important;
 }
 
+.text-tealish-green {
+  color: #23D96C !important;
+}
+
 .text-opacity-25 {
   --bs-text-opacity: 0.25;
 }
@@ -9000,6 +9010,10 @@ textarea.form-control-lg {
 
 .bg-cyan-blue {
   background-color: #3776AB !important;
+}
+
+.bg-tealish-green {
+  background-color: #23D96C !important;
 }
 
 .bg-opacity-10 {
