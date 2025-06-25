@@ -28,18 +28,18 @@ window.addEventListener('scroll', function() {
 //   }
 // }
 
-// function adjustCardWidth() {
-//   var screenWidth = window.innerWidth;
-//   var cards = document.querySelectorAll('.card');
+function adjustCardWidth() {
+  var screenWidth = window.innerWidth;
+  var cards = document.querySelectorAll('.card');
 
-//   cards.forEach(function(card) {
-//     if (screenWidth < 768) {
-//       card.style.width = '14.5rem';
-//     } else {
-//       card.style.width = '28rem';
-//     }
-//   });
-// }
+  cards.forEach(function(card) {
+    if (screenWidth < 768) {
+      card.style.width = '14.5rem';
+    } else {
+      card.style.width = '28rem';
+    }
+  });
+}
 
 function adjustAboutText() {
   const aboutText = document.getElementById('aboutText');
