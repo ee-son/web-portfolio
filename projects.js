@@ -86,7 +86,7 @@ const projects = [
     title: "NYC Property Sales Prediction Model Evaluation",
     image: "assets/image/project/linear-regression.png",
     description: "This project applies linear regression model to predict New York City property prices and evaluates the model using metrics such as RMSE and R².",
-    tech: ["Python"],
+    tech: ["Jupyter"],
   },
 ];
 
@@ -100,6 +100,7 @@ const techColors = {
   Java: "bg-red-600",
   Laravel: "bg-red",
   Flask: "bg-gray",
+  Jupyter: "bg-orange text-black",
   Streamlit: "bg-red-400",
   Nextjs: "bg-black",
   YOLOv8: "bg-blue-700",
